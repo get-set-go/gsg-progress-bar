@@ -37,10 +37,22 @@ export default class GSGProgressBar extends React.Component {
       'width': `${this.props.bProgress}%`
     };
 
+    let _bAlignClass = {
+      [`text-${this.props.bAlign}`]: true
+    };
+
+    _bAlignClass = classNames(_bAlignClass);
+
     return(
-      <div className="progress">
-        <div className={_bClass} style={_bProgress}>
-          {this.props.children}
+      <div>
+        {
+          this.props.isOutside &&
+          <div className={_bAlignClass}>{this.props.children}</div>
+        }
+        <div className="progress">
+          <div className={_bClass} style={_bProgress}>
+            {!this.props.isOutside && this.props.children}
+          </div>
         </div>
       </div>
     );
@@ -50,11 +62,15 @@ export default class GSGProgressBar extends React.Component {
 GSGProgressBar.propTypes = {
   bStyle: PropTypes.string,
   isStriped: PropTypes.bool,
-  isActive: PropTypes.bool
+  isActive: PropTypes.bool,
+  isOutside: PropTypes.bool,
+  bAlign: PropTypes.string
 };
 
 GSGProgressBar.defaultProps = {
   bStyle: 'primary',
   isStriped: false,
-  isActive: false
+  isActive: false,
+  isOutside: false,
+  bAlign: 'left'
 };

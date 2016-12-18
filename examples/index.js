@@ -12,17 +12,17 @@ class Page extends React.Component {
         <h1>Get-Set-Go Progress-Bar Component</h1>
 
         <p className="progressbar-eg-group">
-          <h4>Progress-Bar Styles</h4>
+          <h4>Progress-Bar Styles with text</h4>
 
-          <ProgressBar bProgress="40"></ProgressBar>
+          <ProgressBar bProgress="10">10% scanning</ProgressBar>
 
-          <ProgressBar bStyle="success" bProgress="40"></ProgressBar>
+          <ProgressBar bStyle="success" bProgress="30">30% scanning</ProgressBar>
 
-          <ProgressBar bStyle="info" bProgress="40"></ProgressBar>
+          <ProgressBar bStyle="info" bProgress="50">50% scanning</ProgressBar>
 
-          <ProgressBar bStyle="warning" bProgress="40"></ProgressBar>
+          <ProgressBar bStyle="warning" bProgress="70">70% scanning</ProgressBar>
 
-          <ProgressBar bStyle="danger" bProgress="40"></ProgressBar>
+          <ProgressBar bStyle="danger" bProgress="90">90% scanning</ProgressBar>
         </p>
 
         <p className="progressbar-eg-group">

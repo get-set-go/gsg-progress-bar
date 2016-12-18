@@ -40,7 +40,7 @@ export default class GSGProgressBar extends React.Component {
     return(
       <div className="progress">
         <div className={_bClass} style={_bProgress}>
-          <span className="sr-only">{_bProgress.width} Complete (success)</span>
+          {this.props.children}
         </div>
       </div>
     );

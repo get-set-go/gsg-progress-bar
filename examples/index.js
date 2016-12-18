@@ -12,7 +12,7 @@ class Page extends React.Component {
         <h1>Get-Set-Go Progress-Bar Component</h1>
 
         <p className="progressbar-eg-group">
-          <h4>Progress-Bar Styles with text</h4>
+          <h4>Progress-Bar Styles with text inside</h4>
 
           <ProgressBar bProgress="10">10% scanning</ProgressBar>
 
@@ -23,6 +23,20 @@ class Page extends React.Component {
           <ProgressBar bStyle="warning" bProgress="70">70% scanning</ProgressBar>
 
           <ProgressBar bStyle="danger" bProgress="90">90% scanning</ProgressBar>
+        </p>
+
+        <p className="progressbar-eg-group">
+          <h4>Progress-Bar Styles with text outside</h4>
+
+          <ProgressBar bProgress="10" isOutside="true">10% scanning</ProgressBar>
+        </p>
+
+        <p className="progressbar-eg-group">
+          <h4>Progress-Bar Alignment for text outside</h4>
+
+          <ProgressBar bProgress="10" isOutside="true">Text Aligned to left by default</ProgressBar>
+          <ProgressBar bProgress="10" isOutside="true" bAlign="center">Text Aligned to center</ProgressBar>
+          <ProgressBar bProgress="10" isOutside="true" bAlign="right">Text Aligned to right</ProgressBar>
         </p>
 
         <p className="progressbar-eg-group">

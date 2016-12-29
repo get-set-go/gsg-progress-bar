@@ -6,18 +6,11 @@ import classNames from 'classnames';
 import objectAssign from 'object-assign';
 
 export default class GSGProgressBar extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     let _bClass = {
-      'progress-bar': true
-    };
-
-    _bClass = objectAssign(_bClass, {
+      'progress-bar': true,
       [`progress-bar-${this.props.bStyle}`]: true
-    });
+    };
 
     if (this.props.isStriped) {
       _bClass = objectAssign(_bClass, {

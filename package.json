@@ -1,6 +1,6 @@
 {
   "name": "gsg-progress-bar",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Get-Set-Go progress-bar component",
   "main": "dist/index.min.js",
   "scripts": {
@@ -57,6 +57,7 @@
     "eslint": "^3.11.1",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-react": "^6.7.1",
+    "file-loader": "^0.10.0",
     "jest": "^17.0.3",
     "jest-cli": "^17.0.3",
     "json-loader": "^0.5.4",

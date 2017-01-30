@@ -12,10 +12,7 @@ const commonWebpackConfig = {
 	/**
 	 * Entry point file for bundling the application
 	 */
-	entry: [
-		'babel-polyfill',
-		`${settings.gateway.client}${settings.gateway.entry}`
-	],
+	entry: `${settings.gateway.client}${settings.gateway.entry}`,
 
 	module: {
 		loaders: [
@@ -78,7 +75,7 @@ const commonWebpackConfig = {
 			 */
 			{
 				test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-				loader: "file"
+				loader: "file-loader"
 			}
 		]
 	},
